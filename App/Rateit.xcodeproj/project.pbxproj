@@ -17,6 +17,7 @@
 		4403CA982AA5C4A400739D04 /* RateitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403CA972AA5C4A400739D04 /* RateitUITests.swift */; };
 		4403CA9A2AA5C4A400739D04 /* RateitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403CA992AA5C4A400739D04 /* RateitUITestsLaunchTests.swift */; };
 		4480814B2AA6195F00B2863B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4480814A2AA6195F00B2863B /* LaunchScreen.storyboard */; };
+		4480814E2AA61AF900B2863B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 4480814D2AA61AF900B2863B /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4480814E2AA61AF900B2863B /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,9 @@
 			dependencies = (
 			);
 			name = Rateit;
+			packageProductDependencies = (
+				4480814D2AA61AF900B2863B /* CodeScanner */,
+			);
 			productName = Rateit;
 			productReference = 4403CA742AA5C4A300739D04 /* Rateit.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 4403CA6B2AA5C4A300739D04;
+			packageReferences = (
+				4480814C2AA61AF900B2863B /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 4403CA752AA5C4A300739D04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -464,6 +472,7 @@
 				DEVELOPMENT_TEAM = WY6T4Q2269;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR Code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -494,6 +503,7 @@
 				DEVELOPMENT_TEAM = WY6T4Q2269;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR Code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -629,6 +639,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4480814C2AA61AF900B2863B /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4480814D2AA61AF900B2863B /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4480814C2AA61AF900B2863B /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4403CA822AA5C4A400739D04 /* Rateit.xcdatamodeld */ = {

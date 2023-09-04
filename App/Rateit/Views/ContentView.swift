@@ -7,79 +7,90 @@
 
 import SwiftUI
 import CoreData
+import CodeScanner
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
-
+    
+    @State private var isPresentingScanner = false
+    @State private var scannedCode: String?
+    @State private var image:UIImage?
+    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
+        VStack(spacing: 10) {
+            if let code = scannedCode {
+                NextView(scannedCode: code, scannedImage: image)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+            
+            Button("Scan Code") {
+                isPresentingScanner = true
             }
-            Text("Select an item")
+            
+            Text("Scan a QR code to begin")
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        .sheet(isPresented: $isPresentingScanner) {
+            CodeScannerView(codeTypes: [
+                .qr,
+                .code39,
+                .code39Mod43,
+                .code93,
+                .code128,
+                .ean8,
+                .ean13,
+                .pdf417,
+                .aztec,
+                .dataMatrix,
+                .interleaved2of5,
+                .itf14,
+                .upce,
+                .microPDF417,
+                .qr,
+                .aztec,
+                .interleaved2of5,
+                .itf14,
+                .upce,
+                .microPDF417,
+                .codabar,
+                .gs1DataBar,
+                .gs1DataBarExpanded,
+                .gs1DataBarLimited,
+                .microQR
+            ]
+) { response in
+                switch response {
+                case .success(let result):
+                    scannedCode = result.string
+                    image = result.image
+                case .failure(let error):
+                    scannedCode = error.localizedDescription
+                }
+                print(scannedCode!)
+                isPresentingScanner = false
             }
         }
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
+struct NextView: View {
+    let scannedCode:String
+    let scannedImage:UIImage?
+    var body: some View {
+        VStack{
+            Text(scannedCode)
+            if let image = scannedImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .frame(width: 100, height: 100)
+            }
+        }
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
