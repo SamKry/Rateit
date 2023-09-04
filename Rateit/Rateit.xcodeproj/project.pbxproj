@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4403CA782AA5C4A300739D04 /* RateitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403CA772AA5C4A300739D04 /* RateitApp.swift */; };
+		4403CA7A2AA5C4A300739D04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403CA792AA5C4A300739D04 /* ContentView.swift */; };
+		4403CA7C2AA5C4A400739D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4403CA7B2AA5C4A400739D04 /* Assets.xcassets */; };
+		4403CA7F2AA5C4A400739D04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4403CA7E2AA5C4A400739D04 /* Preview Assets.xcassets */; };
+		4403CA812AA5C4A400739D04 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403CA802AA5C4A400739D04 /* Persistence.swift */; };
+		4403CA842AA5C4A400739D04 /* Rateit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4403CA822AA5C4A400739D04 /* Rateit.xcdatamodeld */; };
+		4403CA8E2AA5C4A400739D04 /* RateitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403CA8D2AA5C4A400739D04 /* RateitTests.swift */; };
+		4403CA982AA5C4A400739D04 /* RateitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403CA972AA5C4A400739D04 /* RateitUITests.swift */; };
+		4403CA9A2AA5C4A400739D04 /* RateitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4403CA992AA5C4A400739D04 /* RateitUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4403CA8A2AA5C4A400739D04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4403CA6C2AA5C4A300739D04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4403CA732AA5C4A300739D04;
+			remoteInfo = Rateit;
+		};
+		4403CA942AA5C4A400739D04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4403CA6C2AA5C4A300739D04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4403CA732AA5C4A300739D04;
+			remoteInfo = Rateit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4403CA742AA5C4A300739D04 /* Rateit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rateit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4403CA772AA5C4A300739D04 /* RateitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateitApp.swift; sourceTree = "<group>"; };
+		4403CA792AA5C4A300739D04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4403CA7B2AA5C4A400739D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4403CA7E2AA5C4A400739D04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4403CA802AA5C4A400739D04 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4403CA832AA5C4A400739D04 /* Rateit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rateit.xcdatamodel; sourceTree = "<group>"; };
+		4403CA892AA5C4A400739D04 /* RateitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4403CA8D2AA5C4A400739D04 /* RateitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateitTests.swift; sourceTree = "<group>"; };
+		4403CA932AA5C4A400739D04 /* RateitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4403CA972AA5C4A400739D04 /* RateitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateitUITests.swift; sourceTree = "<group>"; };
+		4403CA992AA5C4A400739D04 /* RateitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4403CA712AA5C4A300739D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4403CA862AA5C4A400739D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4403CA902AA5C4A400739D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4403CA6B2AA5C4A300739D04 = {
+			isa = PBXGroup;
+			children = (
+				4403CA762AA5C4A300739D04 /* Rateit */,
+				4403CA8C2AA5C4A400739D04 /* RateitTests */,
+				4403CA962AA5C4A400739D04 /* RateitUITests */,
+				4403CA752AA5C4A300739D04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4403CA752AA5C4A300739D04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4403CA742AA5C4A300739D04 /* Rateit.app */,
+				4403CA892AA5C4A400739D04 /* RateitTests.xctest */,
+				4403CA932AA5C4A400739D04 /* RateitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4403CA762AA5C4A300739D04 /* Rateit */ = {
+			isa = PBXGroup;
+			children = (
+				4403CA772AA5C4A300739D04 /* RateitApp.swift */,
+				4403CA792AA5C4A300739D04 /* ContentView.swift */,
+				4403CA7B2AA5C4A400739D04 /* Assets.xcassets */,
+				4403CA802AA5C4A400739D04 /* Persistence.swift */,
+				4403CA822AA5C4A400739D04 /* Rateit.xcdatamodeld */,
+				4403CA7D2AA5C4A400739D04 /* Preview Content */,
+			);
+			path = Rateit;
+			sourceTree = "<group>";
+		};
+		4403CA7D2AA5C4A400739D04 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4403CA7E2AA5C4A400739D04 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4403CA8C2AA5C4A400739D04 /* RateitTests */ = {
+			isa = PBXGroup;
+			children = (
+				4403CA8D2AA5C4A400739D04 /* RateitTests.swift */,
+			);
+			path = RateitTests;
+			sourceTree = "<group>";
+		};
+		4403CA962AA5C4A400739D04 /* RateitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4403CA972AA5C4A400739D04 /* RateitUITests.swift */,
+				4403CA992AA5C4A400739D04 /* RateitUITestsLaunchTests.swift */,
+			);
+			path = RateitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4403CA732AA5C4A300739D04 /* Rateit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4403CA9D2AA5C4A400739D04 /* Build configuration list for PBXNativeTarget "Rateit" */;
+			buildPhases = (
+				4403CA702AA5C4A300739D04 /* Sources */,
+				4403CA712AA5C4A300739D04 /* Frameworks */,
+				4403CA722AA5C4A300739D04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rateit;
+			productName = Rateit;
+			productReference = 4403CA742AA5C4A300739D04 /* Rateit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4403CA882AA5C4A400739D04 /* RateitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4403CAA02AA5C4A400739D04 /* Build configuration list for PBXNativeTarget "RateitTests" */;
+			buildPhases = (
+				4403CA852AA5C4A400739D04 /* Sources */,
+				4403CA862AA5C4A400739D04 /* Frameworks */,
+				4403CA872AA5C4A400739D04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4403CA8B2AA5C4A400739D04 /* PBXTargetDependency */,
+			);
+			name = RateitTests;
+			productName = RateitTests;
+			productReference = 4403CA892AA5C4A400739D04 /* RateitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4403CA922AA5C4A400739D04 /* RateitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4403CAA32AA5C4A400739D04 /* Build configuration list for PBXNativeTarget "RateitUITests" */;
+			buildPhases = (
+				4403CA8F2AA5C4A400739D04 /* Sources */,
+				4403CA902AA5C4A400739D04 /* Frameworks */,
+				4403CA912AA5C4A400739D04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4403CA952AA5C4A400739D04 /* PBXTargetDependency */,
+			);
+			name = RateitUITests;
+			productName = RateitUITests;
+			productReference = 4403CA932AA5C4A400739D04 /* RateitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4403CA6C2AA5C4A300739D04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					4403CA732AA5C4A300739D04 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					4403CA882AA5C4A400739D04 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4403CA732AA5C4A300739D04;
+					};
+					4403CA922AA5C4A400739D04 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 4403CA732AA5C4A300739D04;
+					};
+				};
+			};
+			buildConfigurationList = 4403CA6F2AA5C4A300739D04 /* Build configuration list for PBXProject "Rateit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4403CA6B2AA5C4A300739D04;
+			productRefGroup = 4403CA752AA5C4A300739D04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4403CA732AA5C4A300739D04 /* Rateit */,
+				4403CA882AA5C4A400739D04 /* RateitTests */,
+				4403CA922AA5C4A400739D04 /* RateitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4403CA722AA5C4A300739D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4403CA7F2AA5C4A400739D04 /* Preview Assets.xcassets in Resources */,
+				4403CA7C2AA5C4A400739D04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4403CA872AA5C4A400739D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4403CA912AA5C4A400739D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4403CA702AA5C4A300739D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4403CA842AA5C4A400739D04 /* Rateit.xcdatamodeld in Sources */,
+				4403CA812AA5C4A400739D04 /* Persistence.swift in Sources */,
+				4403CA7A2AA5C4A300739D04 /* ContentView.swift in Sources */,
+				4403CA782AA5C4A300739D04 /* RateitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4403CA852AA5C4A400739D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4403CA8E2AA5C4A400739D04 /* RateitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4403CA8F2AA5C4A400739D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4403CA982AA5C4A400739D04 /* RateitUITests.swift in Sources */,
+				4403CA9A2AA5C4A400739D04 /* RateitUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4403CA8B2AA5C4A400739D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4403CA732AA5C4A300739D04 /* Rateit */;
+			targetProxy = 4403CA8A2AA5C4A400739D04 /* PBXContainerItemProxy */;
+		};
+		4403CA952AA5C4A400739D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4403CA732AA5C4A300739D04 /* Rateit */;
+			targetProxy = 4403CA942AA5C4A400739D04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4403CA9B2AA5C4A400739D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4403CA9C2AA5C4A400739D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4403CA9E2AA5C4A400739D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rateit/Preview Content\"";
+				DEVELOPMENT_TEAM = WY6T4Q2269;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samkry.Rateit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4403CA9F2AA5C4A400739D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rateit/Preview Content\"";
+				DEVELOPMENT_TEAM = WY6T4Q2269;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samkry.Rateit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4403CAA12AA5C4A400739D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY6T4Q2269;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samkry.RateitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rateit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rateit";
+			};
+			name = Debug;
+		};
+		4403CAA22AA5C4A400739D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY6T4Q2269;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samkry.RateitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rateit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rateit";
+			};
+			name = Release;
+		};
+		4403CAA42AA5C4A400739D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY6T4Q2269;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samkry.RateitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rateit;
+			};
+			name = Debug;
+		};
+		4403CAA52AA5C4A400739D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WY6T4Q2269;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samkry.RateitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rateit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4403CA6F2AA5C4A300739D04 /* Build configuration list for PBXProject "Rateit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4403CA9B2AA5C4A400739D04 /* Debug */,
+				4403CA9C2AA5C4A400739D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4403CA9D2AA5C4A400739D04 /* Build configuration list for PBXNativeTarget "Rateit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4403CA9E2AA5C4A400739D04 /* Debug */,
+				4403CA9F2AA5C4A400739D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4403CAA02AA5C4A400739D04 /* Build configuration list for PBXNativeTarget "RateitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4403CAA12AA5C4A400739D04 /* Debug */,
+				4403CAA22AA5C4A400739D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4403CAA32AA5C4A400739D04 /* Build configuration list for PBXNativeTarget "RateitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4403CAA42AA5C4A400739D04 /* Debug */,
+				4403CAA52AA5C4A400739D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4403CA822AA5C4A400739D04 /* Rateit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4403CA832AA5C4A400739D04 /* Rateit.xcdatamodel */,
+			);
+			currentVersion = 4403CA832AA5C4A400739D04 /* Rateit.xcdatamodel */;
+			path = Rateit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4403CA6C2AA5C4A300739D04 /* Project object */;
+}
