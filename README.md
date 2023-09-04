@@ -15,7 +15,7 @@
   <a href="#license">License</a>
 </p>
 
-Rateit is a powerful app designed to help you rate and organize your favorite items. Whether you want to rate your favorite books, movies, or products, Rateit has you covered. This app is perfect for those who want to keep track of their preferences and share their opinions with others.
+Rateit is a powerful iOS app designed to help you rate and organize your favorite items. Whether you want to rate your favorite books, movies, or products, Rateit has you covered. This app is perfect for those who want to keep track of their preferences and share their opinions with others.
 
 ## Key Features
 
