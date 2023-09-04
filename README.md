@@ -57,3 +57,7 @@ Rateit is constantly evolving, and we're open to discussions regarding new featu
 Rateit is built with the future in mind. While it currently relies on a local database, we plan to implement iCloud sync and other exciting features in upcoming releases. Stay tuned for updates!
 
 Rateit is your go-to app for rating and organizing your favorite items. Download it today and start rating the things you love!
+
+## License
+
+The MIT License is a permissive open-source software license that grants users the freedom to use, modify, distribute, and even sell copies of the software, all without any charge. This license, authored by SamKry in 2023, places very few restrictions on the use of the software, making it a popular choice for many open-source projects. Users are required to include the original copyright notice and permission notice when using this software. The MIT License comes with no warranties, and the authors or copyright holders bear no liability for any issues or claims arising from the software's use. It provides a solid foundation for fostering collaboration and innovation in the world of software development.
